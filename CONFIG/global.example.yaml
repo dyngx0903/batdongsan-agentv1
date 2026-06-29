@@ -1,0 +1,26 @@
+# Public example configuration for batdongsan-agent.
+# Copy this file to CONFIG/global.yaml and adjust values for your local environment.
+
+db:
+  host: localhost
+  port: 5432
+  dbname: batdongsan_ai
+  user: bds_user
+  password: your_db_password_here
+
+AGENT_RUNTIME:
+  FEATURE_FLAGS:
+    LLM_ROUTER_FALLBACK: true
+    LLM_RESPONSE_COMPOSER: true
+    LLM_INPUT_PREPROCESSOR: true
+    LLM_INPUT_PRIMARY: true
+  LLM_INPUT_MIN_CONFIDENCE: 0.65
+  LLM_INPUT_TIMEOUT_MS: 3500
+  LLM_MODEL: gemini-2.5-flash-lite
+
+EMBEDDING:
+  provider: gemini
+  model: gemini-embedding-001
+  key_file: key.txt
+  task_type: RETRIEVAL_QUERY
+  output_dimensionality: 3072
