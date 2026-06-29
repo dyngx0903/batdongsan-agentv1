@@ -3,10 +3,10 @@
 
 db:
   host: localhost
-  port: 5432
-  dbname: batdongsan_ai
-  user: bds_user
-  password: 123456
+  port: 
+  dbname: 
+  user: 
+  password: 
 
 AGENT_RUNTIME:
   FEATURE_FLAGS:
