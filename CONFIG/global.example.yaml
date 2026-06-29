@@ -3,9 +3,9 @@
 
 db:
   host: localhost
-  port: 5432
+  port: 
   dbname: batdongsan_ai
-  user: bds_user
+  user: username
   password: your_db_password_here
 
 AGENT_RUNTIME:
